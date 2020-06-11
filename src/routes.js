@@ -2,6 +2,8 @@ const express = require('express');
 
 const Routes = express.Router();
 
-Routes.get('/', (req, res) => res.send('Hello World'));
+const States = require('./Controller/StatesController');
+
+Routes.get('/states', States.index);
 
 module.exports = Routes;

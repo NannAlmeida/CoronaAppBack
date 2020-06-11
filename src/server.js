@@ -7,6 +7,8 @@ const Routes = require('../src/routes');
 const app = express();
 const port = process.env.PORT_DEVELOPMENT;
 
+console.clear();
+
 app.listen(port, () => console.log(`[SERVER] O servidor está rodando na porta ${port}`));
 
 app.use(Routes);
